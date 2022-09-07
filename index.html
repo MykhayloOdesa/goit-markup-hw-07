@@ -15,12 +15,6 @@
     <meta name="theme-color" content="#ffffff" />
     <!-- Favicon end -->
     <title>Студія</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -28,15 +22,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
         <nav class="nav header__nav">
           <a class="logo header__logo" href="./index.html">
-            <span class="logo__text logo__text--accent">Web</span>
-            Studio
+            <span class="logo__text logo__text--accent">Web</span>Studio
           </a>
           <ul class="nav-list header__nav-list">
             <li class="nav-list__item">
@@ -507,17 +500,17 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <div>
+        <div class="footer__box">
           <a class="logo footer__logo" href="./index.html">
-            <span class="logo__text">Web</span>
-            <span class="logo__text logo__text--inverse">Studio</span>
+            <span class="logo__text">Web</span
+            ><span class="logo__text logo__text--inverse">Studio</span>
           </a>
 
           <address class="address footer__address">
             <ul class="list footer__list">
               <li class="list__item footer__item">
                 <a
-                  class="link footer__link"
+                  class="link footer__link footer__link--mapping"
                   href="https://goo.gl/maps/SD5s5Gz4r2weCnc68"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
@@ -661,18 +654,16 @@
           ></textarea>
         </form>
 
-        <form class="form modal__form">
-          <label class="checkbox modal__checkbox">
-            <input class="input checkbox__input--visually-hidden" type="checkbox" name="checkbox" />
-            <span class="icon checkbox__icon">
-              <svg width="16" height="15">
-                <use href="./images/icons.svg#icon-checkbox"></use>
-              </svg>
-            </span>
-            Погоджуюся з розсилкою та приймаю&#160;
-            <span class="conditions checkbox__conditions">Умови договору</span>
-          </label>
-        </form>
+        <label class="checkbox modal__checkbox">
+          <input class="input checkbox__input--visually-hidden" type="checkbox" name="checkbox" />
+          <span class="icon checkbox__icon">
+            <svg width="16" height="15">
+              <use href="./images/icons.svg#icon-checkbox"></use>
+            </svg>
+          </span>
+          Погоджуюся з розсилкою та приймаю&#160;
+          <span class="conditions checkbox__conditions">Умови договору</span>
+        </label>
 
         <button class="button modal__button" type="submit">Відправити</button>
       </div>
